@@ -96,6 +96,11 @@
                 infoWindow.open(map, marker);
             });
             }
+
+            // Remove marker
+            marker.addListener('dblclick', () => {
+                marker.setOptions({'map' : null});
+            });
             }
         }
     </script>
